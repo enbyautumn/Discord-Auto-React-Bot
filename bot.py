@@ -12,9 +12,8 @@ async def on_ready():
  
 @bot.event
 async def on_message(message):
-    if(message.channel.id == "737807052625412208"):
-        await bot.add_reaction(message, "✅")
-        await bot.add_reaction(message, "❌")
- 
+    if message.channel.id == 737807052625412208:
+        await message.add_reaction("✅")
+        await message.add_reaction("❌")
  
 bot.run("bot_token_here")
